@@ -5,15 +5,15 @@ ma_vi_tri int not null  primary key auto_increment,
 ten_vi_tri varchar(45));
 
 create table trinh_do(
-ma_trinh_do int  primary key auto_increment,
+ma_trinh_do int not null  primary key auto_increment,
 ten_trinh_do varchar(45));
 
 create table bo_phan(
-ma_bo_phan int  primary key auto_increment,
+ma_bo_phan int not null primary key auto_increment,
 ten_bo_phan varchar (45));
 
 create table nhan_vien(
-ma_nhan_vien int primary key auto_increment,
+ma_nhan_vien int not null primary key auto_increment,
 ho_ten varchar(45) not null,
 ngay_sinh date not null,
 so_cmnd varchar(45) not null,
@@ -30,11 +30,11 @@ foreign key(ma_bo_phan) references bo_phan(ma_bo_phan)
 );
 
 create table loai_khach(
-ma_khach_hang int primary key auto_increment,
+ma_khach_hang int not null primary key auto_increment,
 ten_khach_hang varchar(45));
 
 create table khach_hang(
-ma_khach_hang int primary key auto_increment,
+ma_khach_hang int not null primary key auto_increment,
 ma_loai_khach int,
 foreign key(ma_loai_khach) references loai_khach(ma_khach_hang),
 ho_ten varchar(45) not null,
@@ -47,7 +47,7 @@ dia_chi varchar(45)
 );
 
 create table hop_dong(
-ma_hop_dong int primary key auto_increment,
+ma_hop_dong int not null primary key auto_increment,
 ngay_lam_hop_dong  datetime not null,
 ngay_ket_thuc datetime  not null,
 tien_dat_coc double not null,
@@ -60,7 +60,7 @@ foreign key(ma_dich_vu) references dich_vu(ma_dich_vu)
 );
 
 create table  hop_dong_chi_tiet(
-ma_hop_dong_chi_tiet int primary key auto_increment,
+ma_hop_dong_chi_tiet int not null primary key auto_increment,
 ma_hop_dong int,
 foreign key(ma_hop_dong) references hop_dong(ma_hop_dong),
 ma_dich_vu_di_kem int,
@@ -69,7 +69,7 @@ so_luong int not null
 );
 
 create table dich_vu_di_kem(
-ma_dich_vu_di_kem int primary key auto_increment,
+ma_dich_vu_di_kem int not null primary key auto_increment,
 ten_dich_vu_di_kem varchar(45) not null,
 gia double not null,
 don_vi varchar(45) not null,
@@ -77,17 +77,17 @@ trang_thai varchar(45)
 );
 
 create table loai_dich_vu(
-ma_loai_dich_vu int primary key auto_increment,
+ma_loai_dich_vu int not null primary key auto_increment,
 ten_loai_dich_vu varchar(45)
 );
 
 create table kieu_thue(
-ma_kieu_thue int primary key auto_increment,
+ma_kieu_thue int not null primary key auto_increment,
 ten_kieu_thue varchar(45)
 );
 
 create table dich_vu(
-ma_dich_vu int primary key auto_increment,
+ma_dich_vu int not null primary key auto_increment,
 ten_dich_vu varchar(45) not null,
 dien_tich int,
 chi_phi_thue double not null,
@@ -132,16 +132,16 @@ values
 
 insert into hop_dong(ngay_lam_hop_dong,ngay_ket_thuc,tien_dat_coc,ma_nhan_vien,ma_khach_hang,ma_dich_vu)
 values
-(20200102,20200501,1200000,1,1,1),
+( 20200102,20200501,1200000,1,1,1),
 (20200202,20200402,1000000,2,2,2),
 (20200430,20200506,1100000,2,4,1),
 (20210430,20200505,900000,1,4,2);
 
 insert into hop_dong_chi_tiet(ma_hop_dong,ma_dich_vu_di_kem,so_luong)
 values
-(33,1,2),
-(34,2,3),
-(33,2,1);
+(5,1,2),
+(6,2,3),
+(7,2,1);
 
 insert into dich_vu_di_kem(ten_dich_vu_di_kem,gia,don_vi,trang_thai)
 values
@@ -161,8 +161,6 @@ insert into dich_vu(ten_dich_vu,dien_tich,chi_phi_thue,so_nguoi_toi_da,ma_kieu_t
 values
 ("dịch vụ vip1",100,40000000,10,2,3,"phòng vip","tivi 4k 100 inch,hồ bơi rộng",30,4),
 ("dịch vụ vip2",250,2250000,8,2,3,null,"hồ bơi", 30,4);
-
-
 
 
 
