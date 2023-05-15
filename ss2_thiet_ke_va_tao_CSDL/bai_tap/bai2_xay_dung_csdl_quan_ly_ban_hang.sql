@@ -1,7 +1,6 @@
-create database bai2_bai_tap2;
+create database xay_dung_csdl_quan_ly_ban_hang;
 
-use bai2_bai_tap2;
-
+use xay_dung_csdl_quan_ly_ban_hang;
 create table customer(
 c_id int not null primary key auto_increment,
 c_name varchar(45),

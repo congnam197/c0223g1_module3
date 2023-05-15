@@ -1,6 +1,6 @@
-create database bai2_bai_tap1;
 
-use bai2_bai_tap1;
+create database chuyen_doi_ERD_sang_mo_hinh_quan_he;  
+use chuyen_doi_ERD_sang_mo_hinh_quan_he;  
 
 create table phieu_xuat(
 so_px int not null auto_increment primary key,
