@@ -1,6 +1,6 @@
 
-create database chuyen_doi_ERD_sang_mo_hinh_quan_he;  
-use chuyen_doi_ERD_sang_mo_hinh_quan_he;  
+create database quan_ly_don_hang;  
+use quan_ly_don_hang;  
 
 create table phieu_xuat(
 so_px int not null auto_increment primary key,
@@ -17,18 +17,19 @@ so_pn int not null auto_increment primary key,
 ngay_nhap datetime not null
 );
 
- create table don_dh(
- so_dh int not null auto_increment primary key,
- ngay_dh datetime,
- ma_ncc int,
- foreign key (ma_ncc) references nha_cc(ma_ncc)
- );
   
   create table nha_cc(
   ma_ncc int not null auto_increment primary key,
   ten_ncc varchar (30) not null,
   dia_chi varchar(40)
   );
+  
+ create table don_dh(
+ so_dh int not null auto_increment primary key,
+ ngay_dh datetime,
+ ma_ncc int,
+ foreign key (ma_ncc) references nha_cc(ma_ncc)
+ );
 
   create table chi_tiet_phieu_xuat(
 don_gia double not null,
