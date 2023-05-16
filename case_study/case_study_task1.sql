@@ -31,13 +31,13 @@ foreign key(ma_bo_phan) references bo_phan(ma_bo_phan)
 );
 
 create table loai_khach(
-ma_khach_hang int not null primary key auto_increment,
-ten_khach_hang varchar(45));
+ma_loai_khach int not null primary key auto_increment,
+ten_loai_khach varchar(45));
 
 create table khach_hang(
 ma_khach_hang int not null primary key auto_increment,
 ma_loai_khach int,
-foreign key(ma_loai_khach) references loai_khach(ma_khach_hang),
+foreign key(ma_loai_khach) references loai_khach(ma_loai_khach),
 ho_ten varchar(45) not null,
 ngay_sinh date not null,
 gioi_tinh bit(1) not null,
@@ -45,28 +45,6 @@ so_cmnd varchar(45) not null,
 so_dien_thoai varchar(45) not null,
 email varchar(45),
 dia_chi varchar(45)
-);
-
-create table hop_dong(
-ma_hop_dong int not null primary key auto_increment,
-ngay_lam_hop_dong  datetime not null,
-ngay_ket_thuc datetime  not null,
-tien_dat_coc double not null,
-ma_nhan_vien int,
-foreign key(ma_nhan_vien) references nhan_vien(ma_nhan_vien),
-ma_khach_hang int,
-foreign key(ma_khach_hang) references khach_hang(ma_khach_hang),
-ma_dich_vu int,
-foreign key(ma_dich_vu) references dich_vu(ma_dich_vu)
-);
-
-create table  hop_dong_chi_tiet(
-ma_hop_dong_chi_tiet int not null primary key auto_increment,
-ma_hop_dong int,
-foreign key(ma_hop_dong) references hop_dong(ma_hop_dong),
-ma_dich_vu_di_kem int,
-foreign key (ma_dich_vu_di_kem) references dich_vu_di_kem(ma_dich_vu_di_kem),
-so_luong int not null
 );
 
 create table dich_vu_di_kem(
@@ -102,6 +80,26 @@ mo_ta_tien_nghi_khac varchar(45),
 dien_tich_ho_boi int,
 so_tang int
 );
+create table hop_dong(
+ma_hop_dong int not null primary key auto_increment,
+ngay_lam_hop_dong  datetime not null,
+ngay_ket_thuc datetime  not null,
+tien_dat_coc double not null,
+ma_nhan_vien int,
+foreign key(ma_nhan_vien) references nhan_vien(ma_nhan_vien),
+ma_khach_hang int,
+foreign key(ma_khach_hang) references khach_hang(ma_khach_hang),
+ma_dich_vu int,
+foreign key(ma_dich_vu) references dich_vu(ma_dich_vu)
+);
+create table  hop_dong_chi_tiet(
+ma_hop_dong_chi_tiet int not null primary key auto_increment,
+ma_hop_dong int,
+foreign key(ma_hop_dong) references hop_dong(ma_hop_dong),
+ma_dich_vu_di_kem int,
+foreign key (ma_dich_vu_di_kem) references dich_vu_di_kem(ma_dich_vu_di_kem),
+so_luong int not null
+);
 
 insert into vi_tri(ten_vi_tri)
 values ("Quản Lý"),("Nhân viên");
@@ -125,7 +123,7 @@ values
 ("Tòng Hoang", "1982-09-03",256781231,6000000,0245144444,"hoangtong@gmail.com","213 Hàm Nghi, Đà Nẵng",2,4,4),
 ("Nguyễn Công Đạo", "1994-01-08",755434343,8000000,0988767111,"nguyencongdao12@gmail.com","6 Hoà Khánh, Đồng Nai",2,3,2);
 
-insert into loai_khach(ten_khach_hang)
+insert into loai_khach(ten_loai_khach)
 values ("Diamond"),("Platinium"),("Gold"),("Silver"),("Member");
 
 insert into khach_hang(ma_loai_khach,ho_ten,ngay_sinh,gioi_tinh,so_cmnd,so_dien_thoai,email,dia_chi)
@@ -140,34 +138,6 @@ values
 (3,"Nguyễn Thị Hào"    ,"1999-04-08", 0 ,965656433 ,0763212345 ,"haohao99@gmail.com"    ,"55 Nguyễn Văn Linh, Kon Tum"),
 (1,"Trần Đại Danh"     ,"1994-07-01", 1 ,432341235 ,0643343433 ,"danhhai99@gmail.com"   ,"24 Lý Thường Kiệt, Quảng Ngãi"),
 (2,"Nguyễn Tâm Đắc"    ,"1989-07-01", 1 ,344343432 ,0987654321 ,"dactam@gmail.com"      ,"22 Ngô Quyền, Đà Nẵng");
-
-insert into hop_dong(ngay_lam_hop_dong,ngay_ket_thuc,tien_dat_coc,ma_nhan_vien,ma_khach_hang,ma_dich_vu)
-values
-	("2020-12-08",	"2020-12-08",	0,	    3,	1,	3),	
-	("2020-07-14",	"2020-07-21",	200000,	7,	3,	1),	
-	("2021-03-15",	"2021-03-17",	50000 ,	3,	4,	2),
-	("2021-01-14",	"2021-01-18",	100000,	7,	5,	5),
-	("2021-07-14",	"2021-07-15",	0,	    7,	2,	6),
-	("2021-06-01",	"2021-06-03",   0,	    7,	7,	6),
-	("2021-09-02",	"2021-09-05",	100000,	7,	4,	4),
-	("2021-06-17",	"2021-06-18",	150000,	3,  4,  1),
-	("2020-11-19",	"2020-11-19",	0,	    3,	4,	3),
-	("2021-04-12",	"2021-04-14",	0,	    10,	3,	5),
-	("2021-04-25",  "2021-04-25",   0,      2,	2,	1),
-	("2021-05-25",	"2021-05-27",	0,	    7,	10,	1);
-
-
-insert into hop_dong_chi_tiet(so_luong,ma_hop_dong,ma_dich_vu_di_kem)
-values
-	(5 , 2,	4),
-	(8 , 2,	5),
-	(15, 2,	6),
-	(1 , 3,	1),
-	(11, 3,	2),
-	(1 , 1,	3),
-	(2 , 1,	2),
-	(2, 12,	2);
-
 
 insert into dich_vu_di_kem(ten_dich_vu_di_kem,gia,don_vi,trang_thai)
 values
@@ -193,8 +163,32 @@ values
 	("Villa No Beach Front",22000 ,9000000  ,8  ,"normal", "Có hồ bơi"        ,300 ,3   ,3 ,1),
 	("House Princess02"    ,10000 ,4000000  ,5  ,"normal", "Có thêm bếp nướng",null,2   ,3 ,2),	
 	("Room Twin02"         , 3000 ,900000   ,2  ,"normal", "Có tivi"          ,null,null,4 ,3);
-
-
+    
+insert into hop_dong(ngay_lam_hop_dong,ngay_ket_thuc,tien_dat_coc,ma_nhan_vien,ma_khach_hang,ma_dich_vu)
+values
+	("2020-12-08",	"2020-12-08",	0,	    3,	1,	3),	
+	("2020-07-14",	"2020-07-21",	200000,	7,	3,	1),	
+	("2021-03-15",	"2021-03-17",	50000 ,	3,	4,	2),
+	("2021-01-14",	"2021-01-18",	100000,	7,	5,	5),
+	("2021-07-14",	"2021-07-15",	0,	    7,	2,	6),
+	("2021-06-01",	"2021-06-03",   0,	    7,	7,	6),
+	("2021-09-02",	"2021-09-05",	100000,	7,	4,	4),
+	("2021-06-17",	"2021-06-18",	150000,	3,  4,  1),
+	("2020-11-19",	"2020-11-19",	0,	    3,	4,	3),
+	("2021-04-12",	"2021-04-14",	0,	    10,	3,	5),
+	("2021-04-25",  "2021-04-25",   0,      2,	2,	1),
+	("2021-05-25",	"2021-05-27",	0,	    7,	10,	1);
+    
+insert into hop_dong_chi_tiet(so_luong,ma_hop_dong,ma_dich_vu_di_kem)
+values
+	(5 , 2,	4),
+	(8 , 2,	5),
+	(15, 2,	6),
+	(1 , 3,	1),
+	(11, 3,	2),
+	(1 , 1,	3),
+	(2 , 1,	2),
+	(2, 12,	2);
 
 
 
