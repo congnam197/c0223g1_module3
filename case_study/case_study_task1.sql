@@ -1,5 +1,5 @@
-create database case_study;
-use case_study;
+create database quan_ly_resort_furama;
+use quan_ly_resort_furama;
 
 create table vi_tri(
 ma_vi_tri int not null  primary key auto_increment,
@@ -141,16 +141,15 @@ values
 
 insert into dich_vu_di_kem(ten_dich_vu_di_kem,gia,don_vi,trang_thai)
 values
-	(   "Karaoke"         ,	10000,"giờ"	 ,"tiện nghi, hiện tại"),
-	(	"Thuê xe máy"     ,	10000,"chiếc","hỏng 1 xe"),
-	(	"Thuê xe đạp"     , 20000,"chiếc","tốt"),
-	(	"Buffet buổi sáng",	15000,"suất" ,"đầy đủ đồ ăn, tráng miệng"),
-	(	"Buffet buổi trưa",	90000,"suất" ,"đầy đủ đồ ăn, tráng miệng"),
-	(	"Buffet buổi tối" ,	16000,"suất" ,"đầy đủ đồ ăn, tráng miệng");
-
+	("Karaoke"         ,	10000,"giờ"	 ,"tiện nghi, hiện tại"),
+	("Thuê xe máy"     ,	10000,"chiếc","hỏng 1 xe"),
+	("Thuê xe đạp"     ,    20000,"chiếc","tốt"),
+	("Buffet buổi sáng",	15000,"suất" ,"đầy đủ đồ ăn, tráng miệng"),
+	("Buffet buổi trưa",	90000,"suất" ,"đầy đủ đồ ăn, tráng miệng"),
+	("Buffet buổi tối" ,	16000,"suất" ,"đầy đủ đồ ăn, tráng miệng");
 
 insert into loai_dich_vu(ten_loai_dich_vu)
-values ("Room"),("Villa"),("House");
+values ("Villa"),("House"),("Room");
 
 insert into kieu_thue(ten_kieu_thue)
 values ("year"),("month"),("day"),("hour");

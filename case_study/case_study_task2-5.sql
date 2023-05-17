@@ -34,7 +34,7 @@ select
     dv.ten_dich_vu,
     hd.ngay_lam_hop_dong,
     hd.ngay_ket_thuc,
-    ifnull((sum(ifnull( (hdct.so_luong * dvdk.gia),0)) + dv.chi_phi_thue),0) as "tong_tien"
+    ifnull( (sum(ifnull((hdct.so_luong * dvdk.gia),0)) + dv.chi_phi_thue),0) as "tong_tien"
 from khach_hang kh
 join loai_khach lk 
 on kh.ma_loai_khach = lk.ma_loai_khach
