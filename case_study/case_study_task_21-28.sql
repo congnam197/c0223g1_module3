@@ -69,14 +69,21 @@ create table so_luong_hop_dong (
 so_luong_con_lai int
 );
 delimiter //
-create trigger tr_xoa_hop_dong 
+create trigger trigger_xoa_hop_dong
 after delete on hop_dong
 for each row
 begin
 declare tong_hop_dong int;
-(select count(delete_status) from hop_dong where delete_status = 1) 
+(select count(delete_status) 
+from hop_dong
+where delete_status = 1 )
 into tong_hop_dong;
-insert into delete_history(so_luong_con_lai)
+insert into so_luong_hop_dong(so_luong_con_lai)
 value (tong_hop_dong);
 end //
 delimiter ;
+  update hop_dong
+  set delete_status = 0
+  where ma_hop_dong = 10;
+  show triggers;
+  drop trigger tr_xoa_hop_dong;
