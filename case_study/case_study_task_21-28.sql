@@ -66,24 +66,30 @@ call sp_them_moi_hop_dong (16,'2022-09-08', '2022-09-11', 1000,3,4,5);
 alter table hop_dong
 add delete_status tinyint default "1";
 create table so_luong_hop_dong (
-so_luong_con_lai int
+stt int auto_increment primary key,
+so_luong_con_lai int,
+ngay_xoa datetime
 );
+
 delimiter //
 create trigger trigger_xoa_hop_dong
-after delete on hop_dong
+after update on hop_dong
 for each row
 begin
 declare tong_hop_dong int;
-(select count(delete_status) 
-from hop_dong
-where delete_status = 1 )
-into tong_hop_dong;
-insert into so_luong_hop_dong(so_luong_con_lai)
-value (tong_hop_dong);
+set  tong_hop_dong =(select count(delete_status) from hop_dong where delete_status = 1 );
+insert into so_luong_hop_dong(so_luong_con_lai,ngay_xoa)
+value (tong_hop_dong,now());
 end //
 delimiter ;
+
   update hop_dong
   set delete_status = 0
-  where ma_hop_dong = 10;
+  where ma_hop_dong = 5;
+  
+  select * 
+  from so_luong_hop_dong;
+  
   show triggers;
-  drop trigger tr_xoa_hop_dong;
+  
+  drop trigger trigger_xoa_hop_dong;

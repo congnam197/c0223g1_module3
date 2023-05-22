@@ -26,11 +26,11 @@ select
  ifnull(sum(hdct.so_luong),0) as so_luong_dich_vu_di_kem,
  hd.tien_dat_coc
 from hop_dong  hd
-left join nhan_vien  nv
+join nhan_vien  nv
 on hd.ma_nhan_vien = nv.ma_nhan_vien
-left join khach_hang  kh 
+join khach_hang  kh 
 on hd.ma_khach_hang = kh.ma_khach_hang
-left join dich_vu  dv 
+join dich_vu  dv 
 on hd.ma_dich_vu = dv.ma_dich_vu
 left join hop_dong_chi_tiet hdct 
 on hd.ma_hop_dong = hdct.ma_hop_dong
