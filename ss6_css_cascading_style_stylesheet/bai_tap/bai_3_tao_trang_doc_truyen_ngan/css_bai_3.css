@@ -1,0 +1,82 @@
+body {
+    background: #FFFFFF;
+    width: 78%;
+    margin-left: 160px;
+    margin-top: 20px;
+}
+div.content{
+background: dodgerblue;
+}
+div #tieu_de {
+    height: 60px;
+    border: 1px solid ;
+    color: #FFFFFF;
+    background: darkorange;
+    border-radius: 20px;
+}
+
+h1 {
+    font-family: "Bookman Old Style", sans-serif;
+    font-size: larger;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+div #menu {
+    width: 900px;
+    height: 150px;
+    border: 1px solid white ;
+    margin-left: 95px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    background-color: orange;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+#menu ul li {
+    list-style-type: circle;
+    background-size: 200px;
+    color: #FFF;
+    margin-left: 50px;
+    line-height: 40px;
+}
+
+#menu ul li a:link {
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px 20px 8px;
+    transition: color 0.8s;
+}
+
+div #title {
+    color: orange;
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-left: 50px;
+    margin-right: 40px;
+}
+
+#p1, #p2, #p3 {
+    color: #FFFFFF;
+    font-size: 18px;
+    text-transform: none;
+}
+
+#p4 {
+    color: white;
+    font-size: 10px;
+}
+
+img {
+    margin-left: 250px;
+    width: 46%;
+}
+
+#menu a:link:hover {
+    color: dodgerblue;
+}
