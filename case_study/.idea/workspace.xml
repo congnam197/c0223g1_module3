@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3ec0d6f6-5028-48f1-80be-3bba6f8db07d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../digit_clock/digit_clock.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../digit_clock/style_clock.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_css_cascading_style_stylesheet/bai_tap/bai_2/vietnam_bach_khoa_toan_thu.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss6_css_cascading_style_stylesheet/bai_tap/bai_2/vietnam_bach_khoa_toan_thu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_css_cascading_style_stylesheet/bai_tap/bai_3/css_bai_3.css" beforeDir="false" afterPath="$PROJECT_DIR$/../ss6_css_cascading_style_stylesheet/bai_tap/bai_3/css_bai_3.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_css_cascading_style_stylesheet/bai_tap/bai_3/image/backgroup_bai3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss6_css_cascading_style_stylesheet/bai_tap/bai_3/tao_trang_doc_truyen.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss6_css_cascading_style_stylesheet/bai_tap/bai_3/tao_trang_doc_truyen.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2QAr2LIdHlm2C1Dh6G6Q4DrJKC0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="flattenPackages" value="true" />
+    <option name="foldersAlwaysOnTop" value="false" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../case_study_2" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3ec0d6f6-5028-48f1-80be-3bba6f8db07d" name="Changes" comment="" />
+      <created>1684807018363</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1684807018363</updated>
+      <workItem from="1684807019691" duration="10000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
