@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        @media screen and (min-width: 700px) {
+            .image-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+        }
+
+        @media screen and (max-width: 700px) and (min-width: 500px) {
+            .image-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .image-container {
+                display: block;
+            }
+        }
+
+        .card:hover {
+            border: 1px solid black;
+        }
+        h3,h4{
+            font-weight: bold;
+            font-family: "Times New Roman",sans-serif;
+        }
+
+    </style>
+</head>
+<body>
+<h3 class="container-fluid">Responsive Image Gallery</h3>
+<h6 class="container-fluid">Resize the browser window to see the effect.</h6><br>
+<div class="image-container container-fluid">
+    <div class="card" style="width: 23rem">
+        <a href="http://demo.codegym.vn/web/15/gallery/img_fjords.jpg" target="_blank">
+            <img src="http://demo.codegym.vn/web/15/gallery/img_fjords.jpg" class="card-img-top" alt="image1">
+        </a>
+        <div class="card-body">
+            <p class="card-text">Add a description of the image here</p>
+        </div>
+    </div>
+    <div class="card " style="width: 23rem">
+        <a href="http://demo.codegym.vn/web/15/gallery/img_forest.jpg" target="_blank">
+            <img src="http://demo.codegym.vn/web/15/gallery/img_forest.jpg" class="card-img-top" alt="image2">
+        </a>
+        <div class="card-body">
+            <p class="card-text">Add a description of the image here</p>
+        </div>
+    </div>
+    <div class="card " style="width: 23rem">
+        <a href="http://demo.codegym.vn/web/15/gallery/img_lights.jpg" target="_blank">
+            <img src="http://demo.codegym.vn/web/15/gallery/img_lights.jpg" class="card-img-top" alt="image3">
+        </a>
+            <div class="card-body">
+                <p class="card-text">Add a description of the image here</p>
+            </div>
+    </div>
+    <div class="card" style="width: 23rem">
+        <a href="http://demo.codegym.vn/web/15/gallery/img_mountains.jpg" target="_blank">
+            <img src="http://demo.codegym.vn/web/15/gallery/img_mountains.jpg" class="card-img-top" alt="image4">
+        </a>
+            <div class="card-body">
+                <p class="card-text">Add a description of the image here</p>
+            </div>
+    </div>
+</div>
+<br>
+<p class="text-body container-fluid">This example use media queries to re-arrange the images on different screen sizes:
+    for screens
+    larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two
+    images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+</html>

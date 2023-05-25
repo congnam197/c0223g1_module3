@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ec0d6f6-5028-48f1-80be-3bba6f8db07d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../digit_clock/digit_clock.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../digit_clock/style_clock.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss6_css_cascading_style_stylesheet/bai_tap/bai_2/vietnam_bach_khoa_toan_thu.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss6_css_cascading_style_stylesheet/bai_tap/bai_2/vietnam_bach_khoa_toan_thu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss6_css_cascading_style_stylesheet/bai_tap/bai_3/css_bai_3.css" beforeDir="false" afterPath="$PROJECT_DIR$/../ss6_css_cascading_style_stylesheet/bai_tap/bai_3/css_bai_3.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss6_css_cascading_style_stylesheet/bai_tap/bai_3/image/backgroup_bai3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ss6_css_cascading_style_stylesheet/bai_tap/bai_3/tao_trang_doc_truyen.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss6_css_cascading_style_stylesheet/bai_tap/bai_3/tao_trang_doc_truyen.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss6_css_cascading_style_stylesheet/bai_tap/bai_3/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7_thiet_ke_bo_cuc_trang_web/bai_tap/layoutbar/css.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7_thiet_ke_bo_cuc_trang_web/bai_tap/layoutbar/demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7_thiet_ke_bo_cuc_trang_web/thuc_hanh/su_dung_box_model.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7_thiet_ke_bo_cuc_trang_web/thuc_hanh/tao_menu_doc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ss7_thiet_ke_bo_cuc_trang_web/thuc_hanh/tao_menu_ngang.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss7_thiet_ke_bo_cuc_trang_web/bai_tap/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ss7_thiet_ke_bo_cuc_trang_web/bai_tap/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss7_thiet_ke_bo_cuc_trang_web/bai_tap/style_css.css" beforeDir="false" afterPath="$PROJECT_DIR$/../ss7_thiet_ke_bo_cuc_trang_web/bai_tap/style_css.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss7_thiet_ke_bo_cuc_trang_web/bai_tap/tao_layout_voi_rwd.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss7_thiet_ke_bo_cuc_trang_web/bai_tap/tao_layout_voi_rwd.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +35,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../case_study_2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../case_study_2_module3_real/case_study_team5_real" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -43,6 +46,7 @@
       <option name="presentableId" value="Default" />
       <updated>1684807018363</updated>
       <workItem from="1684807019691" duration="10000" />
+      <workItem from="1684830687845" duration="18000" />
     </task>
     <servers />
   </component>
