@@ -5,22 +5,20 @@
     <title>Microsoft Surface PCs</title>
 
     <style>
-        a {
+        div a {
             text-decoration: none;
-        }
-
-        #content-1 {
-            background: #d5eafb;
-            padding: 200px 100px;
-            font-size: 50px;
         }
 
         #content-1 a {
             color: black;
         }
 
-        #content-1:hover a {
-            color: #FFFFFF;
+        a:hover {
+            box-shadow: 0 2px black;
+        }
+
+        span {
+            color: black;
         }
     </style>
     <link rel="stylesheet" href="../../../bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/css/bootstrap.css">
@@ -30,7 +28,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
     <div class="container-fluid">
         <div class="col-1 container">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand fs-4" href="#">
                 <img src="https://yt3.googleusercontent.com/ytc/AGIKgqPTdX200rDl1XfmTyGMv_gJYg1uxIxrcypb_PEUkQ=s900-c-k-c0x00ffffff-no-rj"
                      alt="" width="30" height="24" class="d-inline-block align-text-top">
                 Microsoft |
@@ -45,7 +43,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Surface</a>
+                        <a class="nav-link active fs-5" aria-current="page" href="#">Surface</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Computer</a>
@@ -105,61 +103,69 @@
         </div>
     </div>
 </nav>
-<div class="row container-fluid">
+<div class="row container-fluid text-center m-4">
     <div class="col-11"></div>
     <div class="col-1 form-check form-switch">
         <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
         <label class="form-check-label" for="flexSwitchCheckChecked">Animation</label>
     </div>
 </div>
-<div class="row container-fluid p-2">
-    <div id="content-1" class="col-5">
-        <p class="h1">Laptops designed by Microsoft</p>
-        <p class="h3"> Surface computers and adaptive accessories are designed with the disability community to empower
-            everyone to
-            achieve more.</p>
-        <div>
-            <a href="#" class="h4">Shop tablets ></a>
-            <a href="#" class="h4">Shop laptops ></a>
+<div class="row mb-6" id="image1">
+    <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/accessibility-pro-9-laptop-studio_tbmnl?scl=1"
+         class="img-fluid" alt="image1">
+    <div style="position: absolute;font-weight: bold;margin:200px 60px" class="col-4">
+        <div style="font-size: 90px">Laptops designed by Microsoft</div>
+        <div class="h3 mb-4">Surface computers and adaptive accessories are designed with the disability community to
+            empower everyone to achieve more.
         </div>
-        <div>
-            <a href="#" class="h4">About accessibility ></a>
-            <a href="#" class="h4">Watch video ></a>
+        <div class="row mb-4">
+            <div class="col-4">
+                <a class="h4" href="#"><span>Shop tablets ></span></a>
+            </div>
+            <div class="col-4">
+                <a class="h4" href="#"><span>Shop laptops ></span></a>
+            </div>
         </div>
-    </div>
-    <div class="col-7">
-        <img src="accessibility-pro-9-laptop-studio_tbmnl%20(1).png" style="width: 105%">
+        <div class="row">
+            <div class="col-5">
+                <a class="h4" href="#"><span>About accessibility ></span></a>
+            </div>
+            <div class="col-4">
+                <a class="h4 " href="#"><span> Watch video ></span></a>
+            </div>
+        </div>
     </div>
 </div>
-<div class="row container-fluid h4">
+<div class="row container-fluid h5">
     <div class="col-2">
         <a href="#">
             <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/MSFT-For-business-icon?fmt=png-alpha">
             Surface for Business ></a>
     </div>
-    <div class="col-2"><a href="#">
-        <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/MSFT-Compare-devices-icon?fmt=png-alpha">
-        <span>Compare devices ></span></a>
+    <div class="col-2">
+        <a href="#">
+            <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/MSFT-Compare-devices-icon?fmt=png-alpha">
+            Compare devices ></a>
     </div>
     <div class="col-2">
         <a href="#">
             <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/MSFT-Help-Me-Choose-icon?fmt=png-alpha">
-            <span>Help me choose ></span></a>
+            Help me choose ></a>
     </div>
     <div class="col-2">
         <a href="#">
             <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/MSFT-Find-deals-icon?fmt=png-alpha">
-            <span>Surface deals ></span></a>
+            Surface deals ></a>
     </div>
     <div class="col-2">
         <a href="#">
             <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/MSFT-Why-Surface-icon?fmt=png-alpha">
-            <span>Why Surface ></span></a>
+            Why Surface ></a>
     </div>
     <div class="col-2">
         <a href="#">
             <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/MSFT-For-education-icon?fmt=png-alpha">
-            <span>Surface for Education ></span></a>
+            Surface for Education ></a>
     </div>
 </div>
 <div class="row container-fluid h2">
@@ -373,31 +379,75 @@
 <div class="row container-fluid">
     <p class="h1 ">Save on Surface deals</p>
 </div>
-<div class=" row shadow-lg p-3 mb-5 bg-body rounded " style="border: 1px solid black">
+<div class=" row">
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
+        <div class="carousel-inner bg-light">
             <div class="carousel-item active ">
-                <div class="col-4">
-                    <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE59whD?ver=010f "
-                         class="d-block w-100" alt="...">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE59whD?ver=010f"
+                             class="d-block w-100" alt="...">
+                    </div>
+                    <div class="col-4 bg-light" style="margin-top: 20px">
+                        <div class="fs-2">Save up to $300 on Surface Laptop 5</div>
+                        <div class="fs-4"> Sophisticated style and multitasking speed powered by 12th Gen Intel® Core.
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <a href="#" class="fs-3"><p style="text-align: center; margin-top: 70px">Buy Now</p></a>
+                    </div>
                 </div>
             </div>
             <div class="carousel-item">
-                <div class="col-4">
-                    <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWNWSp?ver=e9fd"
-                         class="d-block w-100" alt="...">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWNWSp?ver=e9fd"
+                             class="d-block w-100" alt="...">
+                    </div>
+                    <div class="col-4 bg-light" style="margin-top: 20px">
+                        <div class="fs-2">Save up to $600 on Surface Laptop Studio</div>
+                        <div class="fs-4"> Flex your creative muscle with a touchscreen device that seamlessly
+                            transitions from laptop to portable creative canvas.
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <a href="#" class="fs-3"><p style="text-align: center; margin-top: 70px">Buy Now</p></a>
+                    </div>
                 </div>
             </div>
             <div class="carousel-item">
-                <div class="col-4">
-                    <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWCOYq"
-                         class="d-block w-100" alt="...">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RWCOYq"
+                             class="d-block w-100" alt="...">
+                    </div>
+                    <div class="col-4 bg-light" style="margin-top: 20px">
+                        <div class="fs-2">Up to $600 off select Surface Laptop 4</div>
+                        <div class="fs-4"> Do it all with a perfect balance of sleek design, speed, and immersive
+                            audio.
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <a href="#" class="fs-3"><p style="text-align: center; margin-top: 70px">Buy Now</p></a>
+                    </div>
                 </div>
             </div>
             <div class="carousel-item">
-                <div class="col-4">
-                    <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3fhim?ver=7dfb"
-                         class="d-block w-100" alt="...">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE3fhim?ver=7dfb"
+                             class="d-block w-100" alt="...">
+                    </div>
+                    <div class="col-4 bg-light" style="margin-top: 20px">
+                        <div class="fs-2">Up to 35% off Certified Refurbished Surface</div>
+                        <div class="fs-5"> Our program offers the opportunity to own devices that are put through a
+                            rigorous certification process, tested to confirm they’re working properly, and inspected
+                            for hardware and cosmetic quality—all at a discounted price.
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <a href="#" class="fs-3"><p style="text-align: center; margin-top: 70px">Buy Now</p></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -413,16 +463,16 @@
         </button>
     </div>
 </div>
-<div class="row bg-info m-lg-2  ">
-    <div class="row g-0">
-        <div class="col-sm-6 col-md-8">
+<div class="row mt-4 ">
+    <div class="row" style="background: #bbdef1">
+        <div class="col-sm-6 col-md-6" style="margin:100px">
             <p class="h1">Introducing Windows 11 Phone Link for Surface</p>
             <p> Experience the best of Windows 11 and stay connected on your Surface with Windows Phone Link
                 - available on Android and iOS.1</p>
             <a href="#" style="color: black;font-weight: bold">Get started now</a>
         </div>
         <div class="col-6 col-md-4">
-            <div class="card bg-info text-white" style="border: #0a79f8">
+            <div class="card text-white" style="border: #0a79f8;background: #bbdef1">
                 <img src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/phone-link-windows-11_transparent:VP5-1842x1036?fmt=png-alpha"
                      class="card-img" alt="...">
             </div>
@@ -430,17 +480,81 @@
     </div>
 </div>
 <div class="row">
-    <div class="card bg-dark text-black">
-        <video src="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/MSFT-Zero-waste-by-2030-video"
-               class="card-img" alt="..."></video>
-        <div class="card-img-overlay">
-            <p class="card-title h1">Zero waste by 2030</p>
-            <p class="card-text fs-4">Microsoft is on a journey to be zero waste by 2030, which is why we aim</p>
-            <p class="fs-4"> to create devices built with integrity and reduced carbon impact across</p>
-            <p class="fs-4">their lifecycles.</p>
-            <a href="#" class="card-text"><p class="h3">How we build sustainable Products</p></a>
+    <video class="sustainabilityvideo" preload="none"
+           src="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/MSFT-Zero-waste-by-2030-video"
+           desktop-src="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/MSFT-Zero-waste-by-2030-video"
+           desktop-poster="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/MSFT-An-image-of-ocean-waves-is-on-the-right-RE59yTG-1?scl=1"
+           mobile-src="https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/MSFT-Zero-waste-by-2030-mobile-video"
+           mobile-poster="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/MSFT-An-image-ocean-waves-right-progression-plastic-bottle-transforms-Microsoft-Ocean-Plastic-Mouse-mobile-RE59yTY?scl=1"
+           autoplay="true"
+           poster="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/MSFT-An-image-of-ocean-waves-is-on-the-right-RE59yTG-1?scl=1"
+           playsinline="true" muted="" disablepictureinpicture="" loop="">
+    </video>
+    <div class="position-absolute ">
+        <div style="font-size: 60px;font-weight: bold ;margin: 50px">Zero waste by 2030</div>
+        <div class="col-4" style="font-size: 20px ;margin: 50px">Microsoft is on a journey to be zero waste by 2030,
+            which is why we aim to create devices
+            built with integrity and reduced carbon impact across their lifecycles.
         </div>
+        <div class="col-4" style="font-size: 20px ;margin: 50px; font-weight: bold;"><a href="#">How we build
+            sustainable Products</a></div>
     </div>
+</div>
+</div>
+<div>
+    <section id="adaptability-panel-uidc639" class="adaptability-panel-container animation-toggle-controllee"
+             style="background-color: #F9ECE1;" data-bi-cn="adaptability-panel-uidc639" data-bi-id="c1c13m1r1a3">
+        <div class="ap-heading ap-slide-up is-scrolled-in">
+            <h2 class=" display-4 ">
+                Ultiate accessibility
+            </h2>
+        </div>
+        <div class="ap-feature-small ap-slide-up is-scrolled-in">
+            <picture>
+                <img data-src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/MSFT-Surface-Adaptive-Accessories-Home-Accessibilty-Poster?fmt=png-alpha&amp;scl=1"
+                     src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/MSFT-Surface-Adaptive-Accessories-Home-Accessibilty-Poster?fmt=png-alpha&amp;scl=1"
+                     class="blur-up lazypreload ls-is-cached lazyloaded"
+                     alt="A close up of accessories available from Microsoft Adaptive accessories, including a mouse with different handle options.">
+            </picture>
+
+        </div>
+        <div class="ap-texture-text is-scrolled-in" style="-webkit-text-stroke-color: #FFFFFF;">
+            <span class="display-1 mb-0"><br><br></span>
+        </div>
+
+        <div class="ap-feature-large ap-slide-up is-scrolled-in">
+            <picture>
+                <img data-src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/MSFT-Surface-Adaptive-Accessories-Home-Accessibilty-Poster-2?scl=1"
+                     src="https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/MSFT-Surface-Adaptive-Accessories-Home-Accessibilty-Poster-2?scl=1"
+                     class="blur-up lazypreload lazyloaded"
+                     alt="An occupational therapist works with his client to use Microsoft adaptive accessories to use a Surface Pro 9 device.">
+            </picture>
+        </div>
+        <div class="ap-description ap-slide-up is-scrolled-in">
+            Create the perfect setup for your specific needs with the new Microsoft Adaptive Mouse, Hub, and Buttons
+            accessories to more easily use your Surface and compatible accessories.
+        </div>
+        <div class="ap-links ap-slide-up is-scrolled-in">
+            <div class="link-group">
+                <a data-bi-cn="Shop now " data-bi-ecn="SHOP NOW" data-bi-ct="text" data-bi-pa="body"
+                   class=" btn btn-primary   " data-bi-bhvr="PARTNERREFERRAL"
+                   aria-label="Shop Microsoft's accessible accessories" target="_self"
+                   href="https://www.microsoft.com/en-us/store/b/accessible-adaptive-devices-accessories"
+                   data-bi-ehn="Ultimate accessibility" data-bi-hn="Ultimate accessibility"
+                   data-bi-compnm="Adaptability panel" data-bi-id="n1c1c13m1r1a3" data-bi-prtnm="ms store"
+                   data-bi-prod="accessible adaptive devices accessories">
+                    Shop now </a>
+                <a data-bi-cn="Our accessibility approach" data-bi-ecn="OUR ACCESSIBILITY APPROACH" data-bi-ct="text"
+                   data-bi-pa="body" class=" cta text-primary  " data-bi-bhvr="0"
+                   aria-label="Explore Microsoft's accessible products and technology" target="_blank"
+                   href="https://www.microsoft.com/en-us/accessibility/accessible-technology-products"
+                   data-bi-ehn="Ultimate accessibility" data-bi-hn="Ultimate accessibility"
+                   data-bi-compnm="Adaptability panel" data-bi-id="n2c1c13m1r1a3">
+                    Our accessibility approach
+                </a>
+            </div>
+        </div>
+    </section>
 </div>
 </body>
 </html> 
