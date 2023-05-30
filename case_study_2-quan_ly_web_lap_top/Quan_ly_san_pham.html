@@ -2,9 +2,370 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <title>TEAM 5</title>
+  <style>
+    .carousel-item img {
+      width: 100%;
+      height: 400px;
+    }
+
+    .margin {
+      margin-top: 12px;
+    }
+
+    .footer a {
+      color: black;
+      text-decoration: none;
+    }
+
+    .card img {
+      width: 100%;
+      height: 170px;
+    }
+
+    .size {
+      font-size: 12px;
+    }
+  </style>
+  <script src="../bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/js/bootstrap.bundle.js"></script>
+  <link rel="stylesheet" href="../bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/css/bootstrap.css">
 </head>
 <body>
-$END$
+<div class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-light bg-danger" style="font-size: 15px">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="color: white">Team5</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" style="color: white; font-size: 15px">
+              <i class="fa-solid fa-house-chimney"></i>
+              Home
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false" style="color: white">
+              <i class="fa-solid fa-book"></i>
+              Danh mục
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Laptop</a></li>
+              <li><a class="dropdown-item" href="#">Phụ kiện</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false" style="color: white">
+              <i class="fa-solid fa-location-dot"></i>
+              Xem vị trí cửa hàng
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+              <li><a class="dropdown-item" href="#">Đà Nẵng</a></li>
+              <li><a class="dropdown-item" href="#">Hà Nội</a></li>
+              <li><a class="dropdown-item" href="#">Hồ Chí Minh</a></li>
+            </ul>
+          </li>
+          <li>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Bạn cần tìm gì?"
+                     aria-label="Search">
+              <button class="btn btn-outline-light" type="submit"><i
+                      class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" style="margin-left: 10px;color: white">
+              <span><i class="fa-solid fa-phone"></i></span>Liên hệ Shop
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" style="color: white">
+              <i class="fa-solid fa-truck-fast"></i>Đơn hàng của bạn
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" style="color: white">
+              <i class="fa-solid fa-bag-shopping"></i>Giỏ hàng
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" style="color: white">
+              <i class="fa-solid fa-circle-user"></i>Đăng nhập
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="row w-100" style="margin-top: 15px">
+    <div class="col-2">
+      <div>
+        <div class="btn-group dropend w-100">
+          <button type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+            <i class="fa-solid fa-laptop"></i>
+            Laptop
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Macbook</a></li>
+            <li><a class="dropdown-item" href="#">Dell</a></li>
+            <li><a class="dropdown-item" href="#">HP</a></li>
+            <li><a class="dropdown-item" href="#">Lenovo</a></li>
+            <li><a class="dropdown-item" href="#">ASUS</a></li>
+            <li><a class="dropdown-item" href="#">ACER</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="margin">
+        <div class="btn-group dropend w-100">
+          <button type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+            <i class="fa-solid fa-gamepad"></i>
+            Laptop Gaming
+          </button>
+        </div>
+      </div>
+      <div class="margin">
+        <div class="btn-group dropend w-100">
+          <button type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+            <i class="fa-solid fa-headphones"></i>
+            Tai nghe
+          </button>
+        </div>
+      </div>
+      <div class="margin">
+        <div class="btn-group dropend w-100 ">
+          <a type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown"
+             aria-expanded="false">
+            <i class="fa-solid fa-computer-mouse"></i>
+            Chuột
+          </a>
+        </div>
+      </div>
+      <div class="margin">
+        <div class="btn-group dropend w-100">
+          <button type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+            <i class="fa-regular fa-keyboard"></i>
+            Bàn phím
+          </button>
+        </div>
+      </div>
+      <div class="margin">
+        <div class="btn-group dropend w-100">
+          <button type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+            <i class="fa-brands fa-hotjar"></i>
+            Best Saler
+          </button>
+        </div>
+      </div>
+      <div class="margin">
+        <div class="btn-group dropend w-100">
+          <button type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+            <i class="fa-solid fa-volume-high"></i>
+            Khuyến mãi
+          </button>
+        </div>
+      </div>
+      <div class="margin">
+        <div class="btn-group dropend w-100">
+          <button type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+            <i class="fa-solid fa-magnifying-glass-dollar"></i>
+            Tìm theo giá
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Dưới 10 triệu</a></li>
+            <li><a class="dropdown-item" href="#">Từ 10 - 15 triệu</a></li>
+            <li><a class="dropdown-item" href="#">Từ 15 - 20 triệu</a></li>
+            <li><a class="dropdown-item" href="#">Từ 20 - 25 triệu</a></li>
+            <li><a class="dropdown-item" href="#">Trên 25 triệu</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-7">
+      <div id="carouselExampleFade" class="carousel slide carousel-fade w-100" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://techtimesvn.com/wp-content/uploads/2023/02/Apple-MacBook-Pro-M2-Feature-Blue-Green.jpg"
+                 class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://cdn.tgdd.vn/Files/2020/08/17/1280737/133_800x450.jpg" class="d-block w-100"
+                 alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://cdn.tgdd.vn/Files/2021/06/27/1363660/giai-thich-ten-goi-cua-cac-dong-laptop-hp-va-dong--3.png"
+                 class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://cdn1.hoanghamobile.com/tin-tuc/wp-content/uploads/2023/03/PC-Gaming-Lenovo-LOG-e1679584657633.jpg"
+                 class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div class="col-3">
+      <div style="width: 100%">
+        <a href="#">
+          <img src="https://theme.hstatic.net/1000026716/1000440777/14/solid1.jpg?v=36331"
+               class="card-img-top" alt="...">
+        </a>
+      </div>
+      <div style="width: 100%">
+        <a href="#">
+          <img src="https://theme.hstatic.net/1000026716/1000440777/14/solid5.jpg?v=36331"
+               class="card-img-top" alt="...">
+        </a>
+      </div>
+      <div style="width: 100%; margin-bottom: 10px">
+        <a href="#">
+          <img src="https://cdn2.cellphones.com.vn/690x300,webp,q10/https://dashboard.cellphones.com.vn/storage/right-banner-ideapad-3.jpg"
+               class="card-img-top" alt="...">
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row" style="background-color: #ffd391">
+      <div>
+        <div class="col-12" style="text-align: center; margin-top: 15px">
+          <img src="https://cdn2.cellphones.com.vn/600x,webp/media/wysiwyg/hst.png">
+        </div>
+      </div>
+      <div>
+        <div class="col-12" style="margin-bottom: 10px">
+          <div class="row">
+            <div class="col-2">
+              <div class="card">
+                <img src="https://fptshop.com.vn/Uploads/Originals/2023/2/2/638109598049506720_hp-pavilion-14-dv-bac-2023-dd.jpg"
+                     class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">HP</h5>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="card">
+                <img src="https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mbp14-spacegray-select-202301?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1671304673229"
+                     class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Macbook Pro</h5>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="card">
+                <img src="https://synnexfpt.com/wp-content/uploads/2022/12/Dell-XPS-15-9520-1.jpg"
+                     class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Dell XPS</h5>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="card">
+                <img src="https://no1computer.vn/images/products/2022/11/30/large/acer-nitro-5-rtx-3050-h1_1669799440.jpg"
+                     class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">ACER</h5>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="card">
+                <img src="https://fptshop.com.vn/Uploads/Originals/2023/4/19/638175171020071967_asus-vivobook-a1503-bac-dd-moi.jpg"
+                     class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">ASUS</h5>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="card">
+                <img src="https://bizweb.dktcdn.net/thumb/1024x1024/100/386/618/products/ideapad3-81x8-1-6bcfc18f-e7f4-48fd-bbb1-6ff9e3ad64fc.jpg?v=1666689203703"
+                     class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">LENOVO</h5>
+                  <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row" style="background-color: #f2f2f2; margin-top: 15px">
+      <div class="col-6 d-flex justify-content-center">
+        <div style="padding: 20px;"><h5>Follow this page</h5></div>
+        <div style="padding: 20px;">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-invision"></i>
+        </div>
+      </div>
+      <div class="col-6 d-flex justify-content-center">
+        <div style="padding: 20px;"><h5>Share this page </h5></div>
+        <div style="padding: 20px;">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-invision"></i>
+        </div>
+      </div>
+    </div>
+    <div class="row footer d-flex text-center" style="background-color: #f2f2f2; font-size: 15px">
+      <div class="col-3 size">
+        <div><h5>Công Ty Team5</h5></div>
+        <div>Tận tâm phục vụ</div>
+        <div>Ưu đãi tốt nhất</div>
+      </div>
+      <div class="col-3 size">
+        <div><i class="fa-solid fa-headphones"></i>Tổng đài hỗ trợ miễn phí</div>
+        <div><a href="#"><i class="fa-solid fa-phone-volume"></i>Gọi mua hàng 19005508</a></div>
+        <div><a href="#"><i class="fa-solid fa-phone-volume"></i>Gọi khiếu nại 19003508</a></div>
+        <div><a href="#"><i class="fa-solid fa-phone-volume"></i>Gọi bảo hành 19001508</a></div>
+      </div>
+      <div class="col-3 size">
+        <div><a href="#"><i class="fa-solid fa-file-pen"></i>Chính sách bảo hành</a></div>
+        <div><a href="#"><i class="fa-solid fa-money-check-dollar"></i>Chính sách thanh toán</a></div>
+        <div><a href="#"><i class="fa-brands fa-usps"></i>Chính sách giao hàng</a></div>
+        <div><a href="#"><i class="fa-solid fa-user-secret"></i>Chính sách bảo mật</a></div>
+      </div>
+      <div class="col-3">
+        <img src="https://theme.hstatic.net/1000026716/1000440777/14/20150827110756-dathongbao.png"
+             style="width: 100%">
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
