@@ -16,5 +16,5 @@ public interface IUserService {
 
     void delete(int id);
 
-    List<User> orderBy();
+    List<User> sortByName();
 }

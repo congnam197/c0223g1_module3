@@ -37,7 +37,7 @@ public class UserService implements IUserService {
     }
 
     @Override
-    public List<User> orderBy() {
+    public List<User> sortByName() {
         return userRepository.oderBy();
     }
 }
