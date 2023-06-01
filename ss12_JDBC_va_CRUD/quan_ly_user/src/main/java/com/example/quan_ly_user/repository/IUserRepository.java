@@ -16,5 +16,5 @@ public interface IUserRepository {
 
     void delete(int id);
 
-    List<User> oderBy();
+    List<User> sortByName();
 }

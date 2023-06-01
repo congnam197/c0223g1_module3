@@ -110,18 +110,18 @@ public class UserRepository implements IUserRepository {
     }
 
     @Override
-    public List<User> oderBy() {
-        List<User> list =new ArrayList<>();
-Connection connection= ConnectionDatabase.getConnection();
+    public List<User> sortByName() {
+        List<User> list = new ArrayList<>();
+        Connection connection = ConnectionDatabase.getConnection();
         try {
-            Statement statement =connection.createStatement();
-            ResultSet resultSet= statement.executeQuery(ORDER_BY_USERS_SQL);
-            while (resultSet.next()){
-                int id= resultSet.getInt("id");
+            Statement statement = connection.createStatement();
+            ResultSet resultSet = statement.executeQuery(ORDER_BY_USERS_SQL);
+            while (resultSet.next()) {
+                int id = resultSet.getInt("id");
                 String name = resultSet.getString("name");
-                String email= resultSet.getString("email");
+                String email = resultSet.getString("email");
                 String country = resultSet.getString("country");
-                list.add(new User(id,name,email,country));
+                list.add(new User(id, name, email, country));
             }
         } catch (SQLException e) {
             e.printStackTrace();
